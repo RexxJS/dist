@@ -1,0 +1,6 @@
+# RexxJS Official Module Registry
+# Format: module_name,type,url_template
+# URL template: {tag} = version tag (latest, v1.0.0, etc), {type} = addresses/functions, {name} = module name
+# Example REQUIRE resolution: rexxjs/excel-functions@latest -> https://raw.githubusercontent.com/RexxJS/dist/latest/functions/excel-functions.bundle.js
+
+excel-functions,function-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/excel-functions.bundle.js
