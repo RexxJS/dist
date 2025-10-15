@@ -1,6 +1,38 @@
 # RexxJS Official Module Registry
 # Format: module_name,type,url_template
 # URL template: {tag} = version tag (latest, v1.0.0, etc), {type} = addresses/functions, {name} = module name
-# Example REQUIRE resolution: rexxjs/excel-functions@latest -> https://raw.githubusercontent.com/RexxJS/dist/latest/functions/excel-functions.bundle.js
+# Example REQUIRE resolution: org.rexxjs/excel-functions@latest -> https://raw.githubusercontent.com/RexxJS/dist/latest/functions/excel-functions.bundle.js
 
-excel-functions,function-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/excel-functions.bundle.js
+# Address Handlers
+claude-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/claude-address.bundle.js
+docker-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/docker-address.bundle.js
+duckdb-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/duckdb-address.js
+duckdb-wasm-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/duckdb-wasm-address.bundle.js
+echo-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/echo-address.bundle.js
+gcp-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/gcp-address.bundle.js
+gemini-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/gemini-address.bundle.js
+nspawn-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/nspawn-address.bundle.js
+openai-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/openai-address.bundle.js
+podman-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/podman-address.bundle.js
+qemu-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/qemu-address.bundle.js
+sqlite-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/sqlite-address.bundle.js
+ssh-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/ssh-address.bundle.js
+system-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/system-address.bundle.js
+virtualbox-address,address-handler,https://raw.githubusercontent.com/RexxJS/dist/{tag}/addresses/virtualbox-address.bundle.js
+
+# Function Libraries
+excel-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/excel-functions.bundle.js
+r-graphics-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/r-graphics-functions.bundle.js
+graphviz-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/graphviz-functions.bundle.js
+r-factor-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/r-factor-functions.bundle.js
+r-regression-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/r-regression-functions.bundle.js
+r-set-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/r-set-functions.bundle.js
+r-summary-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/r-summary-functions.bundle.js
+r-timeseries-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/r-timeseries-functions.bundle.js
+sp-interpolation-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/sp-interpolation-functions.bundle.js
+sp-stats-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/sp-stats-functions.bundle.js
+sympy-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/sympy-functions.bundle.js
+jq-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/jq-functions.js
+jq-wasm-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/jq-wasm-functions.bundle.js
+diff-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/diff-functions.js
+sed-functions,functions-library,https://raw.githubusercontent.com/RexxJS/dist/{tag}/functions/sed-functions.js
